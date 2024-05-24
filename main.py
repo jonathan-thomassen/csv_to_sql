@@ -109,7 +109,7 @@ def update_database(config: Config):
     sql_query = sql_query[:-2]
     sql_query += ";"
 
-    connection_string = ("DRIVER={ODBC Driver 17 for SQL Server};"
+    connection_string = ("DRIVER={ODBC Driver 18 for SQL Server};"
                          "SERVER={(localdb)\\MSSQLLocalDB};"
                          "DATABASE=CerealDatabase")
     conn = pyodbc.connect(connection_string)
